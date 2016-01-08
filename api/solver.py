@@ -95,7 +95,7 @@ def solve(statements):
                     for sol_equ in sol_equs:
                         known_symbol = as_known(sol_equ)
                         if known_symbol is not None:
-                            result[known_symbol.lhs] = known_symbol.rhs
+                            results[known_symbol.lhs] = known_symbol.rhs
                             known_symbols.add(known_symbol.lhs)
                         else:
                             unresolved.add(sol_equ)
