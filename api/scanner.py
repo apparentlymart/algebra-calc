@@ -142,7 +142,10 @@ class PeekScanner(object):
                     matchobj.group(1), matchobj.group(2).replace(' ', '')
                 )
 
-            token[1] = self.sym_sub_re.sub(sym_sub, token[1])
+            token[1] = self.sym_sub_re.sub(sym_sub, token[1]).rstrip()
+        elif token[0] == TokenType.COMMAND:
+            token = list(token)
+            token[1] = token[1].rstrip()
 
         return tuple(token)
 
