@@ -2,7 +2,7 @@ from sympy.core.symbol import Symbol
 from sympy.solvers.solvers import solve as solve_system
 from sympy.core.relational import Equality as Eq
 from sympy.simplify.simplify import simplify
-from sympy import true, false
+from sympy import true, false, pretty
 
 
 __all__ = ["solve", "Dependency"]
