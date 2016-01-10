@@ -1,2 +1,4 @@
 env/*
 *.pyc
+lambda_dist/*
+lambda_dist.zip

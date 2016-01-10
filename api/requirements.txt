@@ -1,2 +1,2 @@
--e git://github.com/sympy/sympy.git#egg=sympy
+sympy
 plex==2.0.0dev
