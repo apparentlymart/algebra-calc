@@ -1,0 +1,13 @@
+<div class="container">
+  <ul class="statements equations">
+    <li ng-repeat="statement in statements track by $index" readonly math ng-model="statement"></li>
+    <li math ng-model="newStatement" ng-submit="addNewStatement()" ng-load="newStatementQuillChanged(event)" id="newStatement"></li>
+  </ul>
+  <hr>
+  <ul class="unknowns equations">
+    <li ng-repeat="equation in unknowns" readonly math ng-model="equation"></li>
+  </ul>
+  <ul class="knowns equations">
+    <li ng-repeat="equation in knowns" readonly math ng-model="equation"></li>
+  </ul>
+</div>
